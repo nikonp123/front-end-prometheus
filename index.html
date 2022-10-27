@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kinozal - it's right title!</title>
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <script defer type="text/javascript" src="scripts/helpers.js"></script>
+        <script defer type="text/javascript" src="scripts/sorting.js"></script>
+        <script defer type="text/javascript" src="scripts/card.js"></script>
+        <script defer type="text/javascript" src="scripts/service.js"></script> -->
+        <script defer type="module" src="scripts/app.js"></script>
+<body>
+    <div class="containerGrid">
+        <header class="header">
+            <h1 class="header__title">Cinema</h1>
+        </header> 
+        <nav class="sort" id="sort">
+            <div class="burger" onclick="toggleMobileMenu()">
+                <div class="burger__bar"></div>
+                <div class="burger__bar"></div>
+                <div class="burger__bar"></div>
+            </div>
+            <span class="sort__label">Sort by</span>
+            <!-- <a class="sort__item" href="#">Name</a>
+            <a class="sort__item" href="#">Date</a> -->
+        </nav> 
+        <aside class="sidebar">The best in the world side panel</aside>  
+        <main class="content" id="content">
+
+        </main>
+        <footer class="footer">
+            <p>Footer</p>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        const nav = document.getElementById('sort');
+        // console.log('1');
+        function toggleMobileMenu() {
+            nav.classList.toggle('open');
+            // console.log('2'); 234
+        }
+    </script>
+</body>
+</html>
